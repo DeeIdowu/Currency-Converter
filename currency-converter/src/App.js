@@ -10,7 +10,9 @@ function App() {
   useEffect(()=>{
       fetch(BASE_URL)
         .then(res => res.json())
-        .then(data => console.log(data))
+        .then(data =>{
+          setCurrencyOptions([data.base, ...Object.keys(data.rates)])
+        })
   }, [])
 
   return (
