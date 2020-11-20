@@ -1,10 +1,11 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import CurrencyRow from './components/CurrencyRow';
 import './App.css';
 
 const BASE_URL="https://api.exchangeratesapi.io/latest"
 
 function App() {
+  const [currencyOptions, setCurrencyOptions] = useState([])
 
   useEffect(()=>{
       fetch(BASE_URL)
