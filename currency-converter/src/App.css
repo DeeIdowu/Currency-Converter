@@ -1,4 +1,15 @@
 body {
 	background-color: blue;
 	font-family: Arial, Helvetica;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	text-align: center;
+}
+
+h1 {
+	margin: 0;
+	margin-bottom: 0.5 rem;
 }
