@@ -28,7 +28,7 @@ function App() {
         <CurrencyRow
           currencyOptions = {currencyOptions}
           selectedCurrency={fromCurrency}
-            onChangeCurrency={e=> setToCurrency(e.target.value)}
+            onChangeCurrency={e=> setFromCurrency(e.target.value)}
         />
         <div className="equals">=</div>
         <CurrencyRow
