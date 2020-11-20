@@ -27,12 +27,12 @@ function App() {
         <h1>Welcome to the Currency Converter</h1>
         <CurrencyRow
           currencyOptions = {currencyOptions}
-          selectCurrency={fromCurrency}
+          selectedCurrency={fromCurrency}
         />
         <div className="equals">=</div>
         <CurrencyRow
           currencyOptions = {currencyOptions}
-          selectCurrency={toCurrency}
+          selectedCurrency={toCurrency}
         />
     </div>
   );
