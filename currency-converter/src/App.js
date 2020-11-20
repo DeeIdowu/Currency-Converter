@@ -9,6 +9,7 @@ function App() {
   const [fromCurrency, setFromCurrency] = useState([])
   const [toCurrency, setToCurrency] = useState([])
   const [amount, setAmount] = useState(1)
+  const [amountInFromCurrency, setAmountInFromCurrency] = useState(true)
 
 
 
