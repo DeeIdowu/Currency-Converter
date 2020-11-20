@@ -6,6 +6,7 @@ const BASE_URL="https://api.exchangeratesapi.io/latest"
 
 function App() {
   const [currencyOptions, setCurrencyOptions] = useState([])
+  console.log(currencyOptions)
 
   useEffect(()=>{
       fetch(BASE_URL)
@@ -18,9 +19,13 @@ function App() {
   return (
     <div className="App">
         <h1>Welcome to the Currency Converter</h1>
-        <CurrencyRow/>
+        <CurrencyRow
+          currencyOptions = {currencyOptions}
+        />
         <div className="equals">=</div>
-        <CurrencyRow/>
+        <CurrencyRow
+          currencyOptions = {currencyOptions}
+        />
     </div>
   );
 }
