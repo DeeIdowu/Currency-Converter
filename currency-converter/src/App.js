@@ -33,6 +33,10 @@ if(amountInFromCurrency){
         })
   }, [])
 
+  useEffect(()=>{
+
+  }, [fromCurrency, toCurrency])
+
   function handleFromAmountChange(e){
     setAmount(e.target.value)
     setAmountInFromCurrency(true)
