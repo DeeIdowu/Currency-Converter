@@ -33,8 +33,12 @@ if(amountInFromCurrency){
         })
   }, [])
 
-  useEffect(()=>{
-
+    useEffect(() => {
+    if (fromCurrency != null && toCurrency != null) {
+      fetch(`${BASE_URL}?base=${fromCurrency}&symbols=${toCurrency}`)
+        .then(res => res.json())
+        .then(data => setExchangeRate(data.rates[toCurrency]))
+    }
   }, [fromCurrency, toCurrency])
 
   function handleFromAmountChange(e){
