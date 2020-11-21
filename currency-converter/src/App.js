@@ -58,7 +58,9 @@ if(amountInFromCurrency){
           currencyOptions = {currencyOptions}
           selectedCurrency={toCurrency}
           onChangeCurrency={e=> setToCurrency(e.target.value)}
+          onChangeAmount = {handleToAmountChange}
           amount ={toAmount}
+
         />
     </div>
   );
