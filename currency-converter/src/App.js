@@ -53,7 +53,7 @@ if(amountInFromCurrency){
 
   return (
     <div className="App">
-        <h1>Welcome to the Currency Converter</h1>
+        <h1>Welcome to the Currency Converter:</h1>
         <CurrencyRow
           currencyOptions = {currencyOptions}
           selectedCurrency={fromCurrency}
